@@ -1,0 +1,16 @@
+body{
+    background-color: #F0D8B8;
+}
+.navlist{
+    display: flex;
+    list-style-type: none;
+    
+
+}
+li{
+    float: right;
+}
+
+nav img{
+    width: 20%;
+}
