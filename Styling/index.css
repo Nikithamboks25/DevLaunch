@@ -10,7 +10,7 @@ nav {
     align-items: center;
     justify-content: space-between; /* Ensures space between the logo and nav items */
     padding: 10px 20px; /* Adds some padding around the nav bar */
-    background-color: #E6B794;
+    background-color: rgba(99, 79, 64, .15) 
 }
 
 .navlist {
@@ -39,3 +39,4 @@ nav img {
     width: 200px; 
     margin-right: 20px; 
 }
+
