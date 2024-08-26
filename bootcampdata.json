@@ -1,0 +1,37 @@
+{
+    "bootcamps": [
+      {
+        "name": "Codespace Academy",
+        "location": "Woodstock Cape Town, Johannesburg Gauteng",
+        "website": "codespace.org.co.za",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "courses": [
+          {
+            "name": "Software Development",
+            "overview": "Take the most direct route to starting your career in tech...",
+            "duration": "6/12 Months",
+            "financing": "Paid (Income Share Agreement available)",
+            "format": "Full Time/Part Time",
+            "campus": "Option Available"
+          }
+        ]
+      },
+      {
+        "name": "Another Bootcamp",
+        "location": "Another Location",
+        "website": "anotherbootcamp.org",
+        "description": "Another description...",
+        "courses": [
+          {
+            "name": "Another Course",
+            "overview": "Another course overview...",
+            "duration": "6 Months",
+            "financing": "Paid",
+            "format": "Full Time",
+            "campus": "Option Available"
+          }
+        ]
+      }
+    ]
+  }
+  

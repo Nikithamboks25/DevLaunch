@@ -1,0 +1,29 @@
+/* secondary navigation for bootcamp items */
+
+.secondary-nav{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-style: solid;
+    border-color: #FFF8EE;
+    background-color: #E6B794;
+}
+.secondary-nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.secondary-nav-list a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.secondary-nav-items{
+    margin: 1rem;
+    border-style: solid;
+    border-color: #FFF8EE;
+    background-color: #E6B794;
+}
