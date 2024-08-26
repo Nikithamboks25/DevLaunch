@@ -27,3 +27,22 @@
     border-color: #FFF8EE;
     background-color: #E6B794;
 }
+
+/* description section */
+
+#bootcamp-content{
+    display: flex;
+}
+
+#bootcamp-content img{
+    width: 10rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+.bootcamp-description{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
