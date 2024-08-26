@@ -1,5 +1,14 @@
+:root{
+    --Champain : #f0d8b8;
+    --Peach : #e6b794;
+    --Ivory : #f3f0e9;
+    --Carafe : #634f40;
+}
+
+
+
 body {
-    background-color: #F0D8B8;
+    background-color:var(--Champain);
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -10,7 +19,7 @@ body {
     align-items: center;
     justify-content: space-between; /* Ensures space between the logo and nav items */
     padding: 10px 20px; /* Adds some padding around the nav bar */
-    background-color: #E6B794;
+    background-color:var(--Peach);
 }
 
 .navlist {
@@ -38,4 +47,24 @@ body {
 #navigation img {
     width: 200px; 
     margin-right: 20px; 
+}
+
+div{
+    align-items: center;
+    justify-content: space-between; /* Ensures space between the logo and nav items */
+    padding: 10px 20px; /* Adds some padding around the nav bar */
+    background-color: var(--Peach); 
+}
+button{
+    background-color: var(--Champain);
+    color: var(--Carafe);
+    width: 135px;
+    height: 25px ;
+    border-radius: 6px;
+    
+}
+ 
+button:hover {
+    background-color: var(--Carafe);
+    color: var(--Champain);
 }
