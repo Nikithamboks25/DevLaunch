@@ -1,0 +1,41 @@
+body {
+    background-color: #F0D8B8;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space between the logo and nav items */
+    padding: 10px 20px; /* Adds some padding around the nav bar */
+    background-color: #E6B794;
+}
+
+.navlist {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Allows the nav items to grow and push the Sign In to the right */
+    justify-content: flex-start; /* Aligns nav items to the start */
+}
+.navlist a{
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+}
+
+.navlist li {
+    margin-left: 20px;
+}
+
+.navlist .sign-in {
+    margin-left: auto; /* Pushes the Sign In item to the right */
+}
+
+#navigation img {
+    width: 200px; 
+    margin-right: 20px; 
+}
