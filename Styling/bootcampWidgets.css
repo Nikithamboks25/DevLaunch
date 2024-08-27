@@ -61,10 +61,25 @@ button{
     width: 135px;
     height: 25px ;
     border-radius: 6px;
+    cursor: pointer;
     
 }
  
 button:hover {
     background-color: var(--Carafe);
     color: var(--Champain);
+}
+footer{
+    background-color: var(--Carafe);
+
+    text-align: center;
+}
+
+
+svg{
+    padding: 6.5px;
+}
+
+#heading{
+ text-align: center;
 }
