@@ -49,6 +49,7 @@ function loadCourses(index) {
 
 // Function to load reviews (not yet implemented)
 function loadReviews(index) {
+    
 
 }
 

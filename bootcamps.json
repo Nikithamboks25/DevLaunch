@@ -17,6 +17,26 @@
             "prerequisite": "None",
             "techstack": " HTML, CSS, JAVASCRIPT, GIT, GITHUB, VISUAL STUDIO, FIGMA, ADVANCED JAVASCRIPT, REACT, VUE, ALPHINE, SVELT, TYPESCRIPT"
           }
+        ],
+        "reviews": [
+          {
+            "name": "Sandile",
+            "jobtitle": "Systems dev Intern",
+            "role": "Graduate",
+            "linkedin": "wwww.sandile.com",
+            "rating": "link to rating?",
+            "body": "Lorem ipsum t vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
+
+          },
+          {
+            "name": "Robyn",
+            "jobtitle": "Systems dev Intern",
+            "role": "Graduate",
+            "linkedin": "wwww.sandile.com",
+            "rating": "link to rating?",
+            "body": "Lorem ipsum t vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
+
+          }
         ]
       },
       {
