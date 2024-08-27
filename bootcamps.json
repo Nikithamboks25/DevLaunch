@@ -13,7 +13,9 @@
             "duration": "6/12 Months",
             "financing": "Paid (Income Share Agreement available)",
             "format": "Full Time/Part Time",
-            "campus": "Option Available"
+            "campus": "Option Available",
+            "prerequisite": "None",
+            "techstack": " HTML, CSS, JAVASCRIPT, GIT, GITHUB, VISUAL STUDIO, FIGMA, ADVANCED JAVASCRIPT, REACT, VUE, ALPHINE, SVELT, TYPESCRIPT"
           }
         ]
       },
@@ -30,7 +32,9 @@
             "duration": "6 Months",
             "financing": "Paid",
             "format": "Full Time",
-            "campus": "Option Available"
+            "campus": "Option Available",
+            "prerequisite": "Software Development",
+            "techstack": "JAVASCRIPT, REACT, VUE, ALPHINE, SVELT, TYPESCRIPT, NextJS, SQL, AgileMethodoligies"
           }
         ]
       }
