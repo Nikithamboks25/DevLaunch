@@ -6,7 +6,6 @@ fetch('../bootcamps.json')
     .then(data => {
         bootcamps = data.bootcamps;
         loadBootcamp(0); // Load the first bootcamp by default
-        console.log(loadBootcamp(0))
     });
 
 // Function to load bootcamp data dynamically
@@ -14,7 +13,7 @@ function loadBootcamp(index) {
     const bootcamp = bootcamps[index];
     const contentDiv = document.getElementById('bootcamp-content');
     contentDiv.innerHTML = `
-        <img src="../Assets/codespaceLogo.jpg">
+        <img src="${bootcamp.image}">
         <div class="bootcamp-description">
             <h2>${bootcamp.name}</h2>
             <p>${bootcamp.description}</p>
@@ -22,4 +21,20 @@ function loadBootcamp(index) {
             <p><strong>Website:</strong> <a href="http://${bootcamp.website}" target="_blank">${bootcamp.website}</a></p>
         </div>
     `;
+}
+
+function loadCourses(index){
+    
+}
+
+function loadReviews(index){
+
+}
+
+function loadFinancing(index){
+
+}
+
+function loadApplicationProcess(index){
+
 }

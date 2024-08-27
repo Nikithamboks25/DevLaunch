@@ -1,9 +1,10 @@
 {
     "bootcamps": [
       {
+        "image": "../Assets/codespaceLogo.jpg",
         "name": "Codespace Academy",
         "location": "Woodstock Cape Town, Johannesburg Gauteng",
-        "website": "codespace.org.co.za",
+        "website": "codespace.co.za",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         "courses": [
           {
@@ -17,6 +18,7 @@
         ]
       },
       {
+        "image": "../Assets/codespaceLogo.jpg",
         "name": "Another Bootcamp",
         "location": "Another Location",
         "website": "anotherbootcamp.org",
