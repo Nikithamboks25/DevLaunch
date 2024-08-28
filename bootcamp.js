@@ -1,5 +1,5 @@
 let bootcamps;
-let index = 1;
+let index = 0;
 
 // Fetch JSON data
 fetch('../bootcamps.json')
@@ -7,7 +7,7 @@ fetch('../bootcamps.json')
     .then(data => {
         bootcamps = data.bootcamps;
         loadBootcamp(index); // Load the first bootcamp by default
-        loadCourses(index);
+
     });
 
 // Function to load bootcamp data dynamically
@@ -26,7 +26,9 @@ function loadBootcamp(index) {
 }
 
 // Function to load courses dynamically
-function loadCourses(index) {
+function loadCourses(event, index) {
+    event.preventDefault();
+
     const bootcamp = bootcamps[index];
     const courseDiv = document.getElementById('secondary-nav-items');
     courseDiv.innerHTML = `
@@ -48,8 +50,39 @@ function loadCourses(index) {
 }
 
 // Function to load reviews (not yet implemented)
-function loadReviews(index) {
-    
+function loadReviews(event, index) {
+    event.preventDefault();
+    console.log("review clicked")
+
+    const bootcamp = bootcamps[index];
+    reviewDiv = document.getElementById('secondary-nav-items');
+    reviewDiv.innerHTML = `
+        <h3 id="bootcamp-review-h">${bootcamp.name} Reviews</h3>
+        <div class="review-description">
+            <div class="review-card">
+                <img src="" width="50px" height="50px" style="background-color:#634F40 "/>
+                <div class="review-card-details">
+                    <p> ${bootcamp.reviews[0].name} ✔ ⭐⭐⭐⭐ </p>
+                    <p> ${bootcamp.reviews[0].jobtitle} • ${bootcamp.reviews[0].role} • ${bootcamp.reviews[0].course}  </p>
+                    <p class="review-card-body"> ${bootcamp.reviews[0].body} </p>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <img src="" width="50px" height="50px" style="background-color:#634F40 "/>
+                <div class="review-card-details">
+                    <p> ${bootcamp.reviews[1].name} ✔ ⭐⭐⭐⭐ </p>
+                    <p> ${bootcamp.reviews[1].jobtitle} • ${bootcamp.reviews[1].role} • ${bootcamp.reviews[1].course}  </p>
+                    <p class="review-card-body"> ${bootcamp.reviews[1].body} </p>
+                </div>
+            </div>
+        </div>
+        <button class="readmore"> Read more </button>
+        <h3 align="center" style="font-weight: bold;"> Write a Review for ${bootcamp.name} </h3>
+        <form class="review-form">
+            
+        </form>
+    `;
 
 }
 
@@ -66,4 +99,6 @@ function loadApplicationProcess(index) {
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOMContentLoaded");
     document.getElementById('courses').addEventListener("click", (event) => loadCourses(event, index));
+    document.getElementById('reviews').addEventListener("click", (event) => loadReviews(event, index));
+
 });
