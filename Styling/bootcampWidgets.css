@@ -62,7 +62,7 @@ button{
     height: 25px ;
     border-radius: 6px;
     cursor: pointer;
-    
+    border: none;
 }
  
 button:hover {
@@ -78,6 +78,10 @@ footer{
 
 svg{
     padding: 6.5px;
+}
+
+svg :hover{
+    cursor: pointer;  
 }
 
 #heading{
