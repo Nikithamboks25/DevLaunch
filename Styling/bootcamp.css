@@ -21,7 +21,7 @@
     color: black;
 }
 
-.secondary-nav-items{
+#secondary-nav-items{
     margin: 1rem;
     border-style: solid;
     border-color: #FFF8EE;
@@ -45,4 +45,10 @@
     margin-top: 2rem;
     margin-left: 2rem;
     margin-bottom: 2rem;
+}
+
+/* secondary nav items loaded */
+
+.courses-description{
+    margin-left: 2rem;;
 }
