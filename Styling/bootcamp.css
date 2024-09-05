@@ -52,3 +52,41 @@
 .courses-description{
     margin-left: 2rem;;
 }
+
+/* bootcammp review section */
+
+#bootcamp-review-h{
+    margin: 2rem;
+}
+
+.review-description{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    margin: 2rem;
+}
+
+.review-card{
+    display: flex;
+    background-color: #F0D8B8;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.review-card-details{
+   margin-left: 2rem;
+   margin-right: 2rem;
+   margin-top: -1rem;
+}
+
+.readmore{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    background-color: #F0D8B8;
+    border-radius: 10px;
+    width: 8rem;
+    height: 2rem;
+    font-weight: bold;
+}
