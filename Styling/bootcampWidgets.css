@@ -49,12 +49,36 @@ body {
     margin-right: 20px; 
 }
 
-div{
-    align-items: center;
-    justify-content: space-between; /* Ensures space between the logo and nav items */
-    padding: 10px 20px; /* Adds some padding around the nav bar */
-    background-color: var(--Peach); 
+#widgets {
+    display: flex;
+    background-color: var(--Champain); 
+    overflow-y:hidden;
 }
+
+#widgets div {
+    background-color: #e6b794;
+    
+    padding: 10px 20px; /* Adds some padding around the nav bar */
+    width: 275px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#widgets div ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#widgets div img{
+    width: 120px;
+    border-radius: 10px;
+}
+
+
+
 button{
     background-color: var(--Champain);
     color: var(--Carafe);
@@ -87,3 +111,4 @@ svg :hover{
 #heading{
  text-align: center;
 }
+
