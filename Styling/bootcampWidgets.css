@@ -53,11 +53,17 @@ body {
     display: flex;
     background-color: var(--Ivory); 
     overflow-y:hidden;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+
+
+    
 }
 
 #widgets div {
     background-color:var(--Champain);
-    
+    border-radius: 6px;
     padding: 10px 20px; /* Adds some padding around the nav bar */
     width: 275px;
     height: auto;
@@ -73,13 +79,27 @@ body {
 }
 
 #widgets div img{
+    
     width: 120px;
     border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#widgets div p{
+    text-align: center;
+   
+    
+}
+
+#widgets div h4{
+    text-align:center;
 }
 
 
-
-button{
+#widgets div button{
     background-color: var(--Peach);
     color: var(--Carafe);
     width: 135px;
@@ -87,6 +107,8 @@ button{
     border-radius: 6px;
     cursor: pointer;
     border: none;
+    text-align:center;
+       
 }
  
 button:hover {
@@ -101,7 +123,7 @@ footer{
 
 
 svg{
-    padding: 6.5px;
+    padding: 7.5px;
 }
 
 svg :hover{
@@ -111,4 +133,9 @@ svg :hover{
 #heading{
  text-align: center;
 }
+
+/*@media screen {
+
+    
+}*/
 
