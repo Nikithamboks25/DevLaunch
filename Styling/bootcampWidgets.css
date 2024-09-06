@@ -1,14 +1,14 @@
 :root{
     --Champain : #f0d8b8;
     --Peach : #e6b794;
-    --Ivory : #f3f0e9;
+    --Ivory : #FFF8EE;
     --Carafe : #634f40;
 }
 
 
 
 body {
-    background-color:var(--Champain);
+    background-color:var(--Ivory);
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -51,12 +51,12 @@ body {
 
 #widgets {
     display: flex;
-    background-color: var(--Champain); 
+    background-color: var(--Ivory); 
     overflow-y:hidden;
 }
 
 #widgets div {
-    background-color: #e6b794;
+    background-color:var(--Champain);
     
     padding: 10px 20px; /* Adds some padding around the nav bar */
     width: 275px;
@@ -80,7 +80,7 @@ body {
 
 
 button{
-    background-color: var(--Champain);
+    background-color: var(--Peach);
     color: var(--Carafe);
     width: 135px;
     height: 25px ;
@@ -94,7 +94,7 @@ button:hover {
     color: var(--Champain);
 }
 footer{
-    background-color: var(--Carafe);
+    background-color: var(--Peach);
 
     text-align: center;
 }
