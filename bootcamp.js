@@ -7,6 +7,7 @@ fetch('../bootcamps.json')
     .then(data => {
         bootcamps = data.bootcamps;
         loadBootcamp(index); // Load the first bootcamp by default
+        loadCourses(index);
 
     });
 
@@ -26,8 +27,8 @@ function loadBootcamp(index) {
 }
 
 // Function to load courses dynamically
-function loadCourses(event, index) {
-    event.preventDefault();
+function loadCourses(index) {
+    // event.preventDefault();
 
     const bootcamp = bootcamps[index];
     const courseDiv = document.getElementById('secondary-nav-items');
@@ -49,7 +50,7 @@ function loadCourses(event, index) {
     `;
 }
 
-// Function to load reviews (not yet implemented)
+// Function to load reviews 
 function loadReviews(event, index) {
     event.preventDefault();
     console.log("review clicked");
@@ -72,33 +73,74 @@ function loadReviews(event, index) {
         </div>
         <button class="readmore">Read more</button>
         <h3 align="center" style="font-weight: bold;">Write a Review for ${bootcamp.name}</h3>
-        <form class="review-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            
-            <label for="jobtitle">Job Title (if applicable):</label>
-            <input type="text" id="jobtitle" name="jobtitle">
-            
-            <label for="role">Role:</label>
-            <input type="text" id="role" name="role">
-            
-            <label for="linkedin">LinkedIn URL:</label>
-            <input type="text" id="linkedin" name="linkedin">
-            
-            <label for="rating">Rating:</label>
-            <select id="rating" name="rating">
-                <option value="1">1 ⭐</option>
-                <option value="2">2 ⭐⭐</option>
-                <option value="3">3 ⭐⭐⭐</option>
-                <option value="4">4 ⭐⭐⭐⭐</option>
-                <option value="5">5 ⭐⭐⭐⭐⭐</option>
-            </select>
-            
-            <label for="review">Review:</label>
-            <textarea id="review" name="review" rows="4" cols="50" placeholder="Write your review here..."></textarea>
-            
-            <button type="submit">Submit Review</button>
-        </form>
+        <div class="review-form">
+            <form >
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" class="review-input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="jobtitle">Job Title (if applicable):</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="jobtitle" name="jobtitle" class="review-input">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="role">Role:</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="role" name="role" class="review-input">
+                            <option value="1">Student</option>
+                            <option value="2">Graduate</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="linkedin">LinkedIn URL:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="linkedin" name="linkedin" class="review-input">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="rating">Rating:</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="rating" name="rating" class="review-input">
+                            <option value="1">1 ⭐</option>
+                            <option value="2">2 ⭐⭐</option>
+                            <option value="3">3 ⭐⭐⭐</option>
+                            <option value="4">4 ⭐⭐⭐⭐</option>
+                            <option value="5">5 ⭐⭐⭐⭐⭐</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="review">Review:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="review" name="review" rows="4" cols="50" class="review-input" placeholder="Write your review here..."></textarea>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <button type="submit">Submit Review</button>
+                </div>
+            </form>
+        </div>
     `;
 }
 
@@ -115,7 +157,8 @@ function loadApplicationProcess(index) {
 
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOMContentLoaded");
-    document.getElementById('courses').addEventListener("click", (event) => loadCourses(event, index));
+    //on click 
+    document.getElementById('courses').addEventListener("click", () => loadCourses(index));
     document.getElementById('reviews').addEventListener("click", (event) => loadReviews(event, index));
 
 });
