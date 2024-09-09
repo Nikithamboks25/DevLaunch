@@ -5,13 +5,12 @@
     --Carafe : #634f40;
 }
 
-
-
 body {
     background-color:var(--Ivory);
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 #navigation {
@@ -30,8 +29,9 @@ body {
     flex-grow: 1; /* Allows the nav items to grow and push the Sign In to the right */
     justify-content: flex-start; /* Aligns nav items to the start */
 }
-.navlist a{
-    text-decoration:none;
+
+.navlist a {
+    text-decoration: none;
     color: black;
     font-weight: bold;
 }
@@ -50,92 +50,134 @@ body {
 }
 
 #widgets {
-    display: flex;
-    background-color: var(--Ivory); 
-    overflow-y:hidden;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 5px;
-
-
-    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-gap: 20px; /* Keeps a consistent gap between widgets */
+    padding: 10px; /* Adds some padding inside the widget container */
+    width: 100%; /* Ensures the grid container stays within the screen width */
+    box-sizing: border-box; /* Makes padding part of the total width calculation */
 }
 
 #widgets div {
-    background-color:var(--Champain);
+    background-color: var(--Champain);
     border-radius: 6px;
-    padding: 10px 20px; /* Adds some padding around the nav bar */
-    width: 275px;
+    padding: 10px 20px;
+    max-width: 100%; /* Prevent widgets from overflowing */
     height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px; 
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-#widgets div ul{
+#widgets div ul {
     list-style-type: none;
     padding: 0;
 }
 
-#widgets div img{
-    
+#widgets div img {
     width: 120px;
     border-radius: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
-#widgets div p{
+#widgets div p {
     text-align: center;
-   
-    
 }
 
-#widgets div h4{
-    text-align:center;
+#widgets div h4 {
+    text-align: center;
 }
 
-
-#widgets div button{
-    background-color: var(--Peach);
+#widgets div button {
+    background-color: #d49767;
     color: var(--Carafe);
     width: 135px;
-    height: 25px ;
+    height: 25px;
     border-radius: 6px;
     cursor: pointer;
     border: none;
-    text-align:center;
-       
-}
- 
-button:hover {
-    background-color: var(--Carafe);
-    color: var(--Champain);
-}
-footer{
-    background-color: var(--Peach);
-
     text-align: center;
 }
 
+#widgets div button a{
+    color: var(--Ivory)
 
-svg{
+}
+
+#widgets div button a:hover {
+    background-color: var(--Carafe);
+  
+}
+
+#widgets div button:hover {
+    background-color: var(--Carafe);
+    color: var(--Champain);
+}
+
+footer {
+    background-color: var(--Peach);
+    text-align: center;
+}
+
+svg {
     padding: 7.5px;
 }
 
-svg :hover{
-    cursor: pointer;  
+svg:hover {
+    cursor: pointer;
 }
 
-#heading{
- text-align: center;
+#heading {
+    text-align: center;
 }
 
-/*@media screen {
+/* Responsive styles for tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    #navigation {
+        flex-direction: column; /* Stack the logo and nav items vertically */
+        align-items: flex-start; /* Align items to the start of the nav bar */
+    }
 
-    
-}*/
+    #navigation img {
+        width: 150px; /* Make the logo smaller */
+        margin-bottom: 10px; /* Add space between the logo and nav items */
+    }
 
+    .navlist {
+        justify-content: center; /* Center the nav items */
+    }
+
+    #widgets {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust to two columns */
+        grid-gap: 15px; /* Keeps space between widgets */
+    }
+
+    footer {
+        padding: 20px; /* Add padding for smaller screens */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 480px) {
+    #navigation {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .navlist {
+        flex-direction: column; /* Stack the nav items vertically */
+        align-items: center; /* Center the nav items */
+    }
+
+    .navlist li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Add space between nav items */
+    }
+
+    #widgets {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-gap: 10px; /* Minimum space between widgets */
+    }
+
+    footer {
+        font-size: 12px; /* Reduce footer font size */
+    }
+}
