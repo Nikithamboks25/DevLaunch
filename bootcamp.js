@@ -118,11 +118,11 @@ function loadReviews(event, index) {
                     </div>
                     <div class="col-75">
                         <select id="rating" name="rating" class="review-input">
-                            <option value="1">1 ⭐</option>
-                            <option value="2">2 ⭐⭐</option>
-                            <option value="3">3 ⭐⭐⭐</option>
-                            <option value="4">4 ⭐⭐⭐⭐</option>
-                            <option value="5">5 ⭐⭐⭐⭐⭐</option>
+                            <option value="1">⭐(very poor)</option>
+                            <option value="2">⭐⭐(poor)</option>
+                            <option value="3">⭐⭐⭐(average)</option>
+                            <option value="4">⭐⭐⭐⭐(good)</option>
+                            <option value="5">⭐⭐⭐⭐⭐(excellent)</option>
                         </select>
                     </div>
                 </div>
@@ -154,6 +154,7 @@ function loadFinancing(index) {
 function loadApplicationProcess(index) {
 
 }
+
 
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOMContentLoaded");
