@@ -135,9 +135,9 @@ function loadReviews(event, index) {
                         <textarea id="review" name="review" rows="4" cols="50" class="review-input" placeholder="Write your review here..."></textarea>
                     </div>
                 </div>
-                
+                <br>
                 <div class="row">
-                    <button type="submit">Submit Review</button>
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
