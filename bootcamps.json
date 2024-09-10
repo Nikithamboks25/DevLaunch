@@ -39,7 +39,22 @@
             "body": "Lorem ipsum t vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
 
           }
-        ]
+        ],
+        "financing":[
+          {
+            "type":"Income Share Agreement",
+            "description":"Apply for a income share agreement with our partner ChancenSA at low interest rates", 
+            "learn-more":"codespace.org.za"
+          },
+          {
+            "type":"Installment Plan",
+            "description":"Spread the cost over monthly payments for greater flexibility",
+            "learn-more":"codespace.org.za"
+          }
+        ],
+        "Application Process":{
+          "step 1":""
+        }
       },
       {
         "image": "../Assets/codespaceLogo.jpg",
