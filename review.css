@@ -1,0 +1,119 @@
+html{
+    background-color: #fce1bf;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #d6bfa1;
+    position: fixed;
+}
+
+.navbar p {
+    margin-left: 100px;
+    margin-right: 20px;
+    font-weight: bold;
+    float: inline-end;
+    color: black;
+}
+
+.navbar p:hover{
+    color: red;
+}
+
+.navbar .signIn{
+    margin-left: 450px;
+}
+
+.navbar .signIn:hover{
+    color: red;
+}
+
+main{
+    text-align: center;
+}
+
+.review-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+
+.container1, .container2, .container3{                                                    
+    margin-top: 100px;
+    border: solid grey;
+
+}
+
+.date{
+    color: grey;
+}
+
+hr{
+    margin-top: 50px;
+}
+
+
+.bootcamp-review{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.bootcamp-review img{
+    width: 100px;
+    height: 100px;
+}
+
+.bootcamp1, .bootcamp2, .bootcamp3{
+    border: solid gray;
+    padding: 20px;
+}
+
+button{
+    background-color: #fce1bf;
+}
+
+.submit-btn{
+    width: 70px;
+    height: 40px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 50%;
+}
+
+.submit-btn:hover{
+    background-color: red;
+    width: 72px;
+    height: 42px;
+}
+
+.footer footer{
+    background-color: #3d362d;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer img{
+    width: 80px;
+    height: 70px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+textarea{
+    border-radius: 5%;
+}
+
+#starOne, #starTwo, #starThree, #starFour, #starFive{
+    margin: 1.2em;
+}
+
+#bad-rating, #ok-rating, #good-rating, #great-rating, #amazing-rating{
+    margin: 0.7em;
+}
+
