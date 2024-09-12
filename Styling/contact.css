@@ -122,11 +122,76 @@ button {
 button:hover {
     background-color: #FFF8EE;
 }
-footer {
+/* Icon Section styling */
+.contact-details {
+    padding: 20px;
+    text-align: right; /* Align the text and icons to the right */
+    margin-top: 30px;
+    float:right inline-start;
+
+}
+
+/* List styling */
+.contact-details ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+/* List item styling */
+.contact-details li {
+    display: flex;
+    align-items: center; /* Vertically center-align the icons and text */
+    justify-content: flex-end; /* Align items to the right within the list item */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Icon styling */
+.contact-details img {
+    width: 60px; /* Smaller size for the icons */
+    height: 2px;
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 60px; /* Space between icon and text */
+    padding-top: 70px;
+}
+.footer {
     background-color: #F0D8B8;
     color: black;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     padding-bottom: 70px;
     padding-top: 70px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .social-icons {
+    margin-bottom: 10px;
+}
+
+.footer .social-icon {
+    color: black;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-icon:hover {
+    color: #ddd;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer img{
+    width: 24px; /* Smaller size for the icons */
+    
+    text-decoration: none;
+    
 }
