@@ -16,6 +16,16 @@
             "campus": "Option Available",
             "prerequisite": "None",
             "techstack": " HTML, CSS, JAVASCRIPT, GIT, GITHUB, VISUAL STUDIO, FIGMA, ADVANCED JAVASCRIPT, REACT, VUE, ALPHINE, SVELT, TYPESCRIPT"
+          },
+          {
+            "name":"Javascript Engineering",
+            "overview":"Learn full-stack web development and build fully functional, scalable progressive web apps. In this program, the classroom becomes a simulated work environment where you will gain real-world experience collaborating with a team on Agile development projects. Learn to work smarter, not harder, using AI tools to speed up your development process and become a more efficient software developer.",
+            "duration": "6/12 Months",
+            "financing": "Paid (Income Share Agreement available)",
+            "format": "Full Time/Part Time",
+            "campus": "Option Available",
+            "prerequisite": "None",
+            "techstack": " HTML, CSS, JAVASCRIPT, GIT, GITHUB, VISUAL STUDIO, FIGMA, ADVANCED JAVASCRIPT, REACT, VUE, ALPHINE, SVELT, TYPESCRIPT"
           }
         ],
         "reviews": [
@@ -53,7 +63,10 @@
           }
         ],
         "Application Process":{
-          "step 1":""
+          "step 1":"Pay R500 registration fee, and complete the registration fee",
+          "step 2":"Once the registration has been successful you shall receive an email on your bootcamp dates for entry test and a week of assessments to see whether or not you are well suited for the program",
+          "step 3":"You shall be asked to be called for an interview on your final day of the entry bootcamp.",
+          "step 4":"Once they’ve received the signed contract, you’ll get an acceptance email with your tuition payment details."
         }
       },
       {
