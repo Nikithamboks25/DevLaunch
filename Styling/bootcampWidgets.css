@@ -49,6 +49,11 @@ body {
     margin-right: 20px; 
 }
 
+#navigation #search{
+    border-radius: 5px;
+
+}
+
 #widgets {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
