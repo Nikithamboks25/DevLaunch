@@ -91,19 +91,96 @@ button{
     height: 42px;
 }
 
-.footer footer{
-    background-color: #3d362d;
-    color: #ffffff;
+.footer {
+    background-color: #d49767;
+    color: black;
     text-align: center;
-    margin-top: 100px;
+    padding: 20px 0;
 }
 
-.footer img{
-    width: 80px;
-    height: 70px;
-    margin-right: 20px;
-    margin-left: 20px;
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.footer .social-icons {
+    margin-bottom: 10px;
+}
+
+.footer .social-icon {
+    color: black;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-icon:hover {
+    color: #ddd;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+#heading {
+    text-align: center;
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    #navigation {
+        flex-direction: column; /* Stack the logo and nav items vertically */
+        align-items: flex-start; /* Align items to the start of the nav bar */
+    }
+
+    #navigation img {
+        width: 150px; /* Make the logo smaller */
+        margin-bottom: 10px; /* Add space between the logo and nav items */
+    }
+
+    .navlist {
+        justify-content: center; /* Center the nav items */
+    }
+
+    #widgets {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust to two columns */
+        grid-gap: 15px; /* Keeps space between widgets */
+    }
+
+    footer {
+        padding: 20px; /* Add padding for smaller screens */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 480px) {
+    #navigation {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .navlist {
+        flex-direction: column; /* Stack the nav items vertically */
+        align-items: center; /* Center the nav items */
+    }
+
+    .navlist li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Add space between nav items */
+    }
+
+    #widgets {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-gap: 10px; /* Minimum space between widgets */
+    }
+
+    footer {
+        font-size: 12px; /* Reduce footer font size */
+    }
+}
+
 
 textarea{
     border-radius: 5%;
