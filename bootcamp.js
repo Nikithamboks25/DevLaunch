@@ -28,7 +28,6 @@ function loadBootcamp(index) {
 
 // Function to load courses dynamically
 function loadCourses(index) {
-    // event.preventDefault();
 
     const bootcamp = bootcamps[index];
     const courseDiv = document.getElementById('secondary-nav-items');
@@ -51,8 +50,7 @@ function loadCourses(index) {
 }
 
 // Function to load reviews 
-function loadReviews(event, index) {
-    event.preventDefault();
+function loadReviews(index) {
     console.log("review clicked");
 
     const bootcamp = bootcamps[index];
@@ -160,6 +158,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOMContentLoaded");
     //on click 
     document.getElementById('courses').addEventListener("click", () => loadCourses(index));
-    document.getElementById('reviews').addEventListener("click", (event) => loadReviews(event, index));
+    document.getElementById('reviews').addEventListener("click", (event) => loadReviews(index));
 
 });
