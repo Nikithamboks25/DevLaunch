@@ -160,3 +160,111 @@ input[type=submit]:hover {
       margin-top: 0;
     }
 }
+
+/*financing section*/
+
+.financing-description {
+    margin: 2rem;
+    background-color: #FFF8EE;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.financing-description h3 {
+    color: #634F40;
+    font-size: 1.8rem;
+}
+
+.financing-description p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.financing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.financing-option {
+    background-color: #E6B794;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.financing-option:hover {
+    transform: translateY(-5px);
+}
+
+.financing-option h4 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.financing-option p {
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.financing-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #634F40;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.financing-link:hover {
+    background-color: #533A2C;
+}
+
+.financing-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+/* end of finance section*/
+
+/* Footer styling */
+.footer {
+    background-color: #d49767;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .social-icons {
+    margin-bottom: 10px;
+}
+
+.footer .social-icon {
+    color: black;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-icon:hover {
+    color: #ddd;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/*end of footer section*/
