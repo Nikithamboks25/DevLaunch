@@ -12,39 +12,6 @@ h1{
     text-align: center;
 
 }
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ensures space between the logo and nav items */
-    padding: 10px 20px; /* Adds some padding around the nav bar */
-    background-color: rgba(99, 79, 64, .15) 
-}
-.navlist {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    flex-grow: 1; /* Allows the nav items to grow and push the Sign In to the right */
-    justify-content: flex-start; /* Aligns nav items to the start */
-}
-.navlist a{
-    text-decoration:none;
-    color: black;
-    font-weight: bold;
-}
-
-.navlist li {
-    margin-left: 20px;
-}
-
-.navlist .sign-in {
-    margin-left: auto; /* Pushes the Sign In item to the right */
-}
-
-nav img {
-    width: 200px; 
-    margin-right: 20px; 
-}
 
 /*Body heading*/
 /* Styling for the section */
