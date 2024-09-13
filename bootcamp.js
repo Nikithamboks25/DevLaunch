@@ -163,6 +163,13 @@ function loadFinancing(index) {
                     <p>Apply for a loan with our partner banks at low interest rates.</p>
                     <a href="#" class="financing-link">Learn more</a>
                 </div>
+            <div class="financing-option">
+                <h4>Scholarship</h4>
+                <img src="scholarship-icon.png" alt="Scholarship Icon" class="financing-icon">
+                <p>Apply for merit-based or need-based scholarships to reduce costs.</p>
+                <a href="#" class="financing-link">Apply now</a>
+            </div>
+            
             </div>
         </div>
     `;
@@ -175,7 +182,7 @@ function loadApplicationProcess(index) {
 }
 
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
     console.log("DOMContentLoaded");
     //on click 
     document.getElementById('courses').addEventListener("click", () => loadCourses(index));
