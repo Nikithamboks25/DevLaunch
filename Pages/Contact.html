@@ -5,6 +5,7 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Contact Us</title>
         <link rel="stylesheet" href="/Styling/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <header>
@@ -15,22 +16,57 @@
                     <li><a href="/Pages/BootcampWidgets.html">Bootcamps</a></li>
                     <li><a href="/Pages/MainReview.html">Review</a></li>
                     <li><a href="/Pages/Contact.html">Contact Us</a></li>
-                    <li><a href="/Pages/SignUp.html">Sign In</a></li>
+                    <!-- <li><a href="/Pages/SignUp.html">Sign In</a></li> -->
                     <li class="sign-in"><a href="">Sign In</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="container">
-            <form class="form-style" action="" method="post">
-                <label for="name">Full name</label>
-                <input name="name" id="name" type="text"><br>
-                <label for="email">Email</label>
-                <input name="email" id="email" type="email" required placeholder="you@example.com"><br>
-                <label for="comment">Message</label>
-                <textarea name="comment" id="comment" rows="10" cols="50"></textarea><br>
-                <input type="submit" value="submit">
-            </form>
-        </div>
+        <!-- Main Section -->
+        <main>
+            <section class="body-heading">
+                <h2 class="main-heading">Contact Us</h2>
+            </section>
+            <div class="form-container">
+                <div class="card">
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <section class="contact-details">
+                <ul>
+                    <li><img src="/Assets/call.png" alt="mobile number icon">+217 6547 8979</li>
+                    <li><img src="/Assets/email.png" alt="email icon">CodingStars@gmail.com</li>
+                    <li><img src="/Assets/facebook.png" alt="facebook icon">Coding Stars</li>
+                    <li><img src="/Assets/instagram.png" alt="instagram icon">Coding_Stars</li>
+                </ul>
+            </section>
+        </main>
         <!--Make popup modal to state query has be successfully submitted-->
+        <!-- Footer -->
+         <footer class="footer">
+            <div class="container">
+                <div class="social-icons">
+                    <img src="/Assets/email.png" alt="instagram icon" class="img">
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    
+                </div>
+                <p>&copy; 2024 Coding Stars. All rights reserved.</p>
+            </div>
+         </footer>
     </body>
 </html>

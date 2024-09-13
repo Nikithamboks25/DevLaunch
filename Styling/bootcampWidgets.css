@@ -49,6 +49,11 @@ body {
     margin-right: 20px; 
 }
 
+#navigation #search{
+    border-radius: 5px;
+
+}
+
 #widgets {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
@@ -113,18 +118,40 @@ body {
     color: var(--Champain);
 }
 
-footer {
-    background-color: var(--Peach);
+/* Footer styling */
+.footer {
+    background-color: #d49767;
+    color: black;
     text-align: center;
+    padding: 20px 0;
 }
 
-svg {
-    padding: 7.5px;
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-svg:hover {
-    cursor: pointer;
+.footer .social-icons {
+    margin-bottom: 10px;
 }
+
+.footer .social-icon {
+    color: black;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-icon:hover {
+    color: #ddd;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
 
 #heading {
     text-align: center;

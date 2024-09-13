@@ -28,31 +28,33 @@ function loadBootcamp(index) {
 
 // Function to load courses dynamically
 function loadCourses(index) {
-    // event.preventDefault();
 
     const bootcamp = bootcamps[index];
     const courseDiv = document.getElementById('secondary-nav-items');
     courseDiv.innerHTML = `
-        <div class="courses-description">
-            <h3>${bootcamp.name} Courses</h3>
-            <h4>${bootcamp.courses[0].name}</h4>
-            <h4>Course Overview</h4>
-            <p>${bootcamp.courses[0].overview}</p>
-            <ul>
-                <li>Duration: ${bootcamp.courses[0].duration}</li>
-                <li>Financing Options: ${bootcamp.courses[0].financing}</li>
-                <li>Format: ${bootcamp.courses[0].format}</li>
-                <li>Campus: ${bootcamp.courses[0].campus}</li>
-                <li>Prerequisite: ${bootcamp.courses[0].prerequisite}</li>
-                <li>Tech Stack: ${bootcamp.courses[0].techstack}</li>
-            </ul>
+    <div class="courses-description">
+        <h3 classes>${bootcamp.name} Courses</h3>
+        ${bootcamp.courses.map(course =>`
+                <h4>${course.name}</h4>
+                <h4>Course Overview</h4>
+                <p>${course.overview}</p>
+                <ul>
+                    <li>Duration: ${course.duration}</li>
+                    <li>Financing Options: ${course.financing}</li>
+                    <li>Format: ${course.format}</li>
+                    <li>Campus: ${course.campus}</li>
+                    <li>Prerequisite: ${course.prerequisite}</li>
+                    <li>Tech Stack: ${course.techstack}</li>
+                </ul>
+            
+            `).join('')}
         </div>
     `;
 }
 
+
 // Function to load reviews 
-function loadReviews(event, index) {
-    event.preventDefault();
+function loadReviews(index) {
     console.log("review clicked");
 
     const bootcamp = bootcamps[index];
@@ -147,6 +149,23 @@ function loadReviews(event, index) {
 
 // Function to load financing options (not yet implemented)
 function loadFinancing(index) {
+    const bootcamp = bootcamps[index];
+    const financeDiv = document.getElementById('secondary-nav-items');
+    financeDiv.innerHTML = `
+        <div class="financing-description">
+            <h3>Financing Options for ${bootcamp.name}</h3>
+            <p>Choose the best option to fund your bootcamp experience:</p>
+            
+            <div class="financing-grid">
+                <div class="financing-option">
+                    <h4>Loan</h4>
+                    <img src="loan-icon.png" alt="Loan Icon" class="financing-icon">
+                    <p>Apply for a loan with our partner banks at low interest rates.</p>
+                    <a href="#" class="financing-link">Learn more</a>
+                </div>
+            </div>
+        </div>
+    `;
 
 }
 
@@ -160,6 +179,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOMContentLoaded");
     //on click 
     document.getElementById('courses').addEventListener("click", () => loadCourses(index));
-    document.getElementById('reviews').addEventListener("click", (event) => loadReviews(event, index));
+    document.getElementById('reviews').addEventListener("click", () => loadReviews(index));
+    document.getElementById('financing').addEventListener("click", () => loadFinancing(index));
+    document.getElementById('application').addEventListener("click", () => loadApplicationProcess(index));
 
 });
