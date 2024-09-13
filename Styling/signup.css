@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    height: 100vh; /* Full viewport height */
+}
+
+.card-left-side {
+    background-color: #F0D8B8; /* Blue color for left side */
+}
+
+.card-right-side {
+    background-color: #634F40; /* Red color for right side */
+}
+
+/* Card styling */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Styling for logo */
+.logo {
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+/* Form styling */
+.left-form, .right-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form input styling */
+.left-form input, .right-form input {
+    width: 100%;
+    max-width: 400px; /* Limit input field width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button styling */
+.left-form button, .right-form button {
+    width: 100%;
+    max-width: 400px; /* Match button width with input fields */
+    padding: 10px;
+    background-color: white; /* Primary color */
+    border: none;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.left-form button:hover, .right-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Link styling */
+.left-form a, .right-form a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.left-form a:hover, .right-form a:hover {
+    text-decoration: underline;
+}
+
+/* Heading and paragraph styling */
+.right-side h1 {
+    margin-top: 0;
+    color: #333; /* Darker color for headings */
+}
+
+.right-side p {
+    color: #666; /* Gray color for text */
+}
+
+
+
+
