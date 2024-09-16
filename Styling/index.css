@@ -1,16 +1,17 @@
- body {
-    background-color:#FFF8EE;
+body {
+    background-color: #FFF8EE;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Navigation Styling */
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures space between the logo and nav items */
-    padding: 10px 20px; /* Adds some padding around the nav bar */
-    background-color:#F0D8B8;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #F0D8B8;
 }
 
 .navlist {
@@ -18,13 +19,19 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    flex-grow: 1; /* Allows the nav items to grow and push the Sign In to the right */
-    justify-content: flex-start; /* Aligns nav items to the start */
+    flex-grow: 1;
+    justify-content: flex-start;
 }
-.navlist a{
-    text-decoration:none;
+
+.navlist a {
+    text-decoration: none;
     color: black;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navlist a:hover {
+    color: #333; /* Slightly darker on hover */
 }
 
 .navlist li {
@@ -32,11 +39,54 @@ nav {
 }
 
 .navlist .sign-in {
-    margin-left: auto; /* Pushes the Sign In item to the right */
+    margin-left: auto;
 }
 
 nav img {
-    width: 200px; 
-    margin-right: 20px; 
+    width: 180px;
+    margin-right: 20px;
 }
 
+/* Responsive Navigation for Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .navlist {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .navlist li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav img {
+        width: 150px; /* Smaller logo */
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive for very small screens */
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    .navlist {
+        align-items: center;
+    }
+
+    .navlist a {
+        font-size: 0.9em; /* Slightly smaller text */
+    }
+
+    nav img {
+        width: 130px; /* Smaller logo for very small screens */
+    }
+}
