@@ -111,21 +111,72 @@
         <hr>
         <h1>Tell us what you think</h1>
         <h2>Our site</h2>
-        <form>
-            <p><span id="starOne">⭐</span><span id="starTwo">⭐</span><span id="starThree">⭐</span><span id="starFour">⭐</span><span id="starFive">⭐</span></p>
-            <p><span id="bad-rating">Bad</span><span id="ok-rating">OK</span><span id="good-rating">Good</span><span id="great-rating">Great</span><span id="amazing-rating">Amazing</span></p>
-            <p>Comment:</p>
-            <label for="comment"></label>
-            <textarea id="comment" name="comment" placeholder="DevLaunch is"></textarea>
+       
+        <form >
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="name" class="review-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="jobtitle">Job Title (if applicable):</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="jobtitle" name="jobtitle" class="review-input">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label for="role">Role:</label>
+                </div>
+                <div class="col-75">
+                    <select id="role" name="role" class="review-input">
+                        <option value="1">Student</option>
+                        <option value="2">Graduate</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="linkedin">LinkedIn URL:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="linkedin" name="linkedin" class="review-input">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label for="rating">Rating:</label>
+                </div>
+                <div class="col-75">
+                    <select id="rating" name="rating" class="review-input">
+                        <option value="1">⭐(very poor)</option>
+                        <option value="2">⭐⭐(poor)</option>
+                        <option value="3">⭐⭐⭐(average)</option>
+                        <option value="4">⭐⭐⭐⭐(good)</option>
+                        <option value="5">⭐⭐⭐⭐⭐(excellent)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label for="review">Review:</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="review" name="review" rows="4" cols="50" class="review-input" placeholder="Write your review here..."></textarea>
+                </div>
+            </div>
             <br>
-            <br>
-            <p>I confirm that the information</p>
-                <p>provided are true</p>
-            <input type="checkbox" id="agree"/>
-            <label for="agree">I agree to the terms and conditions</label>
-            <br>
-            <br>
-            <button type="submit" class="submit-btn">Submit</button>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
         </form>
         <div class="footer">
             <footer class="footer">
